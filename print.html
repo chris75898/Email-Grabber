@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Email Grabber</title>
+		<script type="text/javascript" src="print.js"></script>
+		<style>
+		@page{margin:0px auto;}
+		@media print
+		{    
+		    .no-print, .no-print *
+		    {
+		        display: none !important;
+		    }
+		}
+
+		header
+		{
+			text-align:center;
+		}
+		header > div
+		{
+			display: inline-block;
+			margin: 0px 10px;
+			padding-bottom: 10px;
+			padding:;
+		}
+		h4
+		{
+			text-align: center;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+		table
+		{
+			border-spacing: 20px 0px;
+		}
+		.button
+		{
+			display: inline-block;
+			background-color: #3a5795;
+			color: white;
+			font-weight: bold;
+			padding: 10px;
+			 -webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    cursor:pointer;
+		}
+		.selected
+		{
+			background-color: green !important;
+		}
+
+		</style>
+	</head>
+	<body>
+		<header class="no-print">
+			<div style="float:left">
+				<a href="https://chrome.google.com/webstore/detail/email-grabber/ghobigmmhnlgemnfdodpgelcofpmcoem/reviews" target="_blank">
+					<img src="images/Logo.png" />
+				</a>
+			</div>
+			<div>
+				<h4>Number of Columns</h4>
+				<select id="columsSelector">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+			</div>
+			<div>
+				<h4>Float Text</h4>
+				<div id="alignTableLeft" class="button">Left</div>
+				<div id="alignTableCenter" class="button selected">Center</div>
+				<div id="alignTableRight" class="button">Right</div>
+			</div>
+			<div>
+				<h4>Align Text</h4>
+				<div id="alignTextLeft" class="button selected">Left</div>
+				<div id="alignTextCenter" class="button">Center</div>
+				<div id="alignTextRight" class="button">Right</div>
+			</div>
+			<div>
+				<h4>Spacing Between Columns</h4>
+				<select id="columnSpacingSelector">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+			</div>
+			<div>
+				<div id="printButton" class="button"><span>Print</span> <img src="images/print.png" style="vertical-align:middle; padding-left: 3px;"/></div>
+			</div>
+		</header>
+		<hr class="no-print"/>
+		<main>
+			<table id="emailTable" style="margin: 0 auto; float: none">
+			</table>
+		</main>
+	</body>
+</html>

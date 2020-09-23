@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script src="popup.js" type="text/javascript"></script>
+		<style>
+			body
+			{
+				width: 250px;
+				text-align: center;
+			    -webkit-user-select: none;
+			}
+			div
+			{
+				width: 100%;
+				text-align: center;
+			}
+			div > div
+			{
+				display: inline-block;
+				width: 60px;
+				margin: 1px 2px;
+				padding: 3px 5px;
+				cursor: hand;
+				color: white;
+				font-weight: bold;
+				background-color: #3a5795;
+			}
+			.noWrap
+			{
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://chrome.google.com/webstore/detail/email-grabber/ghobigmmhnlgemnfdodpgelcofpmcoem?utm_source=chrome-ntp-icon" target="_blank"><img src="images/Marquee_Finished.png" style="width: 125px;" /></a><a target="_self" href="popups/options.html"><img style="position: relative; left: 10px;" src="images/settings.svg" /></a>
+		<hr />
+		<h4>Number of Emails Grabbed: <span id="summaryCount">0</span></h4>
+		<div>
+			<div id="sendGmail"><span class="noWrap">Send to</span> Gmail</div>
+			<div id="copyClipboard"><span class="noWrap">Copy to</span> Clipboard</div>
+			<div id="preparePrint"><span class="noWrap">Prepare to</span> Print</div>
+		</div>
+	</body>
+</html>

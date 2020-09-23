@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<script src="index.js" type="text/javascript"></script>
+		<style>
+			body
+			{
+				width: 250px;
+				text-align: center;
+				-webkit-user-select: none;
+			}
+			div
+			{
+				width: 100%;
+				text-align: center;
+			}
+			div > div
+			{
+				display: inline-block;
+				width: 60px;
+				margin: 1px 2px;
+				padding: 3px 5px;
+				cursor: hand;
+				color: white;
+				font-weight: bold;
+				background: #3a5795;
+  				transition: background-color .2s ease-out;
+			}
+			div > div:active
+			{
+				background-color: rgb(223, 90, 81);
+			}
+			/* Start Status View */
+			#statusView
+			{
+				margin: 15px 0px;
+			}
+			#statusView h4
+			{
+				margin-bottom: -1px;
+				padding-bottom: 0px;
+			}
+			#statusView_showMore
+			{
+				color: lightgrey;
+				font-style: italic;
+				cursor: hand;
+			}
+			#statusView_showMore:hover
+			{
+				color: grey;
+			}
+			/* End Status View */
+			.noWrap
+			{
+				white-space: nowrap;
+			}
+			li
+			{
+				list-style-type: none;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="options.html" style="position: absolute; top: 2px; right: 2px;"><img src="images/settings.svg" style="width: 20px;" /></a>
+		<div id="headerView">
+			<a href="https://chrome.google.com/webstore/detail/email-grabber/ghobigmmhnlgemnfdodpgelcofpmcoem/reviews" target="_blank">
+				<img src="images/Marquee_Finished.png" style="width: 125px;"/>
+			</a>
+			<hr />
+		</div>
+		<div id="statusView">
+			<h4>Number of Emails Grabbed: <span id="summaryCount">0</span></h4>
+			<a href="showAddresses.html"><span id="statusView_showMore">Show Addresses</span></a>
+		</div>
+		<div>
+			<div id="sendGmail"><span class="noWrap">Send to</span> <span id="email">Email</span></div>
+			<div id="copyClipboard"><span class="noWrap">Copy to</span> Clipboard</div>
+			<div id="preparePrint"><span class="noWrap">Prepare to</span> Print</div>
+		</div>
+	</body>
+</html>
